@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(Sports.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+
+.content h1 {
+    font-size: 70px;
+    margin-top: 30px;
+}
+
+.content p {
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.logo {
+    width: 120px;
+    cursor: pointer;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 13px;
+    position: relative;
+
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after {
+
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+
+}
+
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(#fff);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+.container .cards {
+    position: relative;
+    height: 440px;
+    width: 320px;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
+        inset -5px -5px 5px rgba(255, 255, 255, 0.5),
+        5px 5px 5px rgba(0, 0, 0, 0.05),
+        -5px -5px 5px rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    margin: 10px;
+}
+
+.container .cards .box {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.container .cards:hover .box{
+
+    transform: translateY(-50px);
+   
+ 
+}
+.container .cards:hover #cric1{
+    background-image: url(./cric1.jpg);
+    background-position: fixed;   
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container .cards:hover #foot4{
+    background-image: url(./Foot4.jpeg);
+    background-position: fixed;   
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container .cards:hover #Volley2{
+    background-image: url(./Volley3.jpg);
+    background-position: fixed;   
+    background-size: cover;
+    background-repeat: no-repeat;
+}.container .cards:hover #basket3{
+    background-image: url(./Basket2\ \(2\).jpg);
+    background-position: fixed;   
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container .cards:hover #indoor5{
+    background-image: url(./Chess.jpg);
+    background-position: fixed;   
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container .cards:hover #kabaddi{
+    background-image: url(./kabaddi.jpg);
+    background-position: fixed;   
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container .cards .box .info{
+    padding: 20px;
+    text-align: center;
+}
+
+.container .cards .box .info h2 {
+    position: absolute;
+    top: -10px;
+    right: 30px;
+    font-size: 8em;
+    color: rgba(0, 0, 0, 0.05);
+    transition: 0.5s;
+}
+.container .cards:hover .box .info h2
+{
+    color: rgba(0, 0, 0, 0.05);
+
+}
+.container .cards .box .info h3 {
+    font-size: 1.8em;
+    color: #777;
+    z-index: 1;
+    transition: 0.5s;
+
+} 
+.container .cards .box .info p{
+    font-size: 1em;
+    font-weight: 300;
+    color: #777;
+    z-index: 1;
+    transition: 0.5s;
+}
+.container .cards:hover .box .info h2,
+.container .cards:hover .box .info li,
+.container .cards:hover .box .info h3,
+.container .cards:hover .box .info  p{
+    color:transparent;
+}
+
+
+    

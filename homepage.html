@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial_scale=1.0">
+    <title>Sreenidhi Portal</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="./unnamed.png">
+    <link rel="stylesheet" href="./proj.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script>
+      function SubForm() {
+          $.ajax({
+              url:'https://api.apispreadsheets.com/data/DHXUTTXnOwdj4esQ/',
+              type:'post',
+              data:$("#form").serializeArray(),
+              success: function(){
+                alert("Form Data Submitted :)")
+                document.getElementById("form").reset();
+              },
+              error: function(){
+                alert("There was an error :(")
+              }
+          });
+      }
+      </script>
+</head>
+
+<body class="body">
+    <div class="main">
+        <div class="row">
+            <img src="./sreenidhi-logo (1).png" alt="" class="img1">
+            <img src="./NAAC-A-grade-logo.jpg" alt="" class="ig2">
+            <img src="./National_Board_of_Accreditation.svg.png" alt="" class="ig3">
+            <img src="./UGC.jpg" alt="" class="ig4">
+            <button class="contact" id="btn" onclick="window.location.href = './contact.html';">Contact us</button>
+            <button class="Feedback" id="btn" onclick="window.location.href ='./feedback.html';">Feedback form</button>
+            <button class="Alumni" id="btn">Alumni Portal</button>
+            
+            <button class="Location" id="btn" onclick="window.location.href = 'https://www.google.com/maps/dir/17.4501714,78.6682389/Sreenidhi+Institute+of+Science+%26+Technology+-+SNIST,+Yamnampet,+Ghatkesar,+Hyderabad,+Telangana+501301/@17.4481533,78.6569265,15z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0x3bcb7612c2c68369:0x9ea4b426b7e3699!2m2!1d78.6664965!2d17.4553223!3e0';">Location</button>
+  
+            <div class="center1">
+                <button class="Feedback" id="show-login" >Login</button>
+            </div>
+            
+                <div class="popup">
+                    <div class="close-btn">&#10006</div>
+                    <div class="form">
+                        <form action="" method="post" name="google-sheet" id="form">
+                        <h2>LOGIN</h2>
+                        <div class="form-element">
+                            <label for="Name">Name</label>
+                            <input type="text" id="username" placeholder="Username" autocomplete="off" >
+                        </div>
+                        <div class="form-element">
+                            <label for="Password">Password</label>
+                            <input type="password" id="password" placeholder="Password">
+                        </div>
+                          <div class="form-element">
+                            <input type="checkbox" id="remember-me">
+                            <label for="remember-me">Remember me</label>
+                        </div>
+                            
+                        </form>
+                        <button class="submitForm" onclick="SubForm()" name="submit" type="submit">Submit</button>
+                    </div>
+                </div>
+            
+        </div>
+        <nav class="container">
+            <ul>
+                <li><a href="./homepage.html" style="font-size:15px">Home</a></li>
+                <li><a href="#aboutus" onclick="scrollFunction1()" style="font-size:15px">About Us</a></li>
+                <li><div class="dropdown">
+                    <a href="" class="dropdown" style="font-size:15px">Departments</a>
+                    <div class="dropdown-content">
+                      <a href="./snist.html" style="font-size:15px">BTech</a>
+                      <a href="./mtech.html" style="font-size:15px">MTech</a>
+                      <a href="#">MBA</a>
+                    </div>
+                  </div>
+                    
+                    </li>
+                <li><a href="#research" style="font-size:15px">Research & Innovation</a></li>
+                <li><a href="#infrastructure" style="font-size:15px">Infrastructure</a></li>
+                <li><a href="#placements" style="font-size:15px">Placements</a></li>
+                <li><a href="./query.html" style="font-size:15px">IQAC</a></li>
+                <li><a href="" style="font-size:15px">Students</a></li>
+                <li><a href=""style="font-size:15px">Rankings</a></li>
+                <li><a href="./article.html" style="font-size:15px">Articles</a></li>
+            </ul>
+            
+        </nav>
+        
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <img src="./clg2.jpeg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="./gallery3.png" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="./gallery6.png" style="width:100%">
+            </div>
+
+        </div>
+        <br>
+        <h1 class="heading" id="aboutus">About Sreenidhi Educational Group</h1><br>
+        <div class="about">
+            <p style="text-align:justify"><b>Sreenidhi Institute of Science and Technology–Hyderabad</b>, sponsored by Sree Educational Group was
+                established in the year 1997 by the Chairman, Dr. K.T. Mahhe, an extraordinary educationist, a pragmatic
+                leader, and a dynamic entrepreneur with rich experience in Academics and Industry. He has a proven
+                history of achievements, awards, and recognitions to his credit. He is an outstanding personality
+                devoted to the cause of providing high-quality technical and scientific education to urban and rural
+                students of Telangana, Andhra Pradesh, and all other states alike. A genuine commitment to the mission
+                and dedicated leadership makes SNIST one of the finest and well-recognized higher educational
+                institutions in India. Variety of facilities on the campus including, state-of-the-art labs with
+                sophisticated equipment, libraries, Wi-Fi enabled campus, knowledge center, lavish AC auditoriums, smart
+                classrooms, Hostels with premium facilities, amenities on campus including ATMs, bookstores, dining
+                options, cafeterias, playground and many more give the students a truly fulfilling and enriching
+                experience. <br><br>
+                Highly qualified faculty, flexible and dynamic curriculum, exciting research projects, and
+                global connections are the features that set SNIST ahead of the rest. The students here are encouraged
+                to participate in a wide range of academic, practical, co-curricular, extra-curricular programs to
+                enable them to gain the required exposure to a wide variety of social, cultural, and intellectual
+                opportunities and challenges. Such interesting learning experiences have transformed our students into
+                multi-skilled and multi-tasking personalities, ensuring success in their lives and careers.</p>
+        </div><br>
+        <h1 class="heading" id="infrastructure">Infrastructure</h1>
+        <div class="wrapper">
+            <div class="card img1" id="cimg">
+                <center><img class="img" src="./pexels-pixabay-207691.jpg">
+                <h3>Classrooms/Seminar Halls</h3></center>
+            </div>
+            <div class="card img2" id="cimg">
+                <center><img class="img" src="./hostel-1.jpg" onclick="window.location.href = './hostels.html';">
+                <h3>Hostels</h3></center>
+            </div>
+            <div class="card img3" id="cimg" >
+                <center><img class="img" src="./26704522702_6e9d76d895_c.jpg" onclick="window.location.href = './transport.html';">
+                <h3>Transport Facilities</h3></center>
+            </div>
+            <div class="card img4" id="cimg">
+                <center><img class="img" src="./pexels-max-fischer-5212664.jpg">
+                <h3>Center for E-Learning</h3></center>
+            </div>
+            <div class="card img5" id="cimg">
+                <center><img class="img" src="./pexels-chokniti-khongchum-2280571.jpg" onclick="window.location.href = './laboratories.html';">
+                <h3>Labs</h3></center>
+            </div>
+            <div class="card img6" id="cimg">
+                <center><img class="img" src="./Sports.png" onclick="window.location.href = './Sports.html';">
+                <h3>Sports Facilities</h3></center>
+            </div>
+        </div><br><br>
+        <h1 class="heading">Departments</h1><br><br>
+        <center><div class="cards" style="display:flex">
+            <div class="panel" style="background-image: url('./btech.png')">
+                <button class="btn" onclick="window.location.href = './snist.html';">Btech</button>
+            </div>
+            <div class="panel" style="background-image: url('./mtech.jfif')">
+                <button class="btn" onclick="window.location.href = './mtech.html';">Mtech</button>
+            </div>
+            <div class="panel" style="background-image: url('./mba2.jpg')">
+                <button class="btn">MBA</button>
+            </div>
+        </div>
+        </center><br>
+        <h1 class="heading" id="research">Research and Innovation</h1><br>
+        <div class="about">
+            <p style="text-align:justify">SNIST believes that ,Strong Academics, Industry relevant training, Emerging technology knowledge through
+                R&D and Professional mindset with human approach are the essential attributes that determine the success
+                of technical education. SNIST Research efforts are towards productive collaboration with leading
+                Research Institutes, both nationally and globally, to invent and provide solutions to Technological and
+                societal problems .A separate Department is established for Research and consultancy in the Institute
+                with full time Director and Dean .</p>
+            <p style="text-align:justify">The institute has 8 UG and PG programs with dedicated faculty and students, involved extensively in
+                research activities. SNIST is recognized by DSIR, Govt. of India as Scientific and Industrial Research
+                Organisation (SIRO) – 2009 to till date.</p>
+            <p style="text-align:justify">The website provides a detailed overview of the Research activities undertaken and contributions made by
+                faculty in each department. Faculty members with Ph.D and Pursuing Ph.D are required to conduct Academic
+                research as an integral part of their responsibility to generate and assimilate new knowledge which gets
+                imbibed in their teaching and students projects . Many faculty members are recognized guides by JNTU for
+                guiding Ph.D . Sponsored Research and Industrial consultancy are the two important modes through which
+                faculty are supporting their research and contributing to the need of the industry and Society.</p>
+        </div><br>
+        <h1 class="heading" id="placements">Placements</h1><br>
+        <div class="about">
+            <p>With a steady growth rate in placements every year, SNIST is delivering a creative and skilled workforce
+                to the corporate sectors. We facilitate students to make rewarding careers unleashing their fullest
+                potential. These are the placement figures as of 31st March 2022 and the recruitments are still going
+                strong.</p>
+        </div>
+        <br><br>
+        <div class="place">
+            <center><img src="./snist-banner-02.png" style="width:90%"></center>
+        </div>
+        <div class="cards1" style="display:flex">
+            <div class="card-img">
+                <img src="./offer - Copy.jpeg">
+                <h2>1710</h2>
+                <hr>
+                <p>Offers on 31st March</p>
+            </div>
+            <div class="card-img">
+                <img src="./pic2.jpeg">
+                <h2>₹38 LPA</h2>
+                <hr>
+                <p>Highest CTC</p>
+            </div>
+            <div class="card-img">
+                <img src="./pic2.jpeg">
+                <h2>₹5.5 LPA</h2>
+                <hr>
+                <p>Average CTC</p>
+            </div>
+            <div class="card-img">
+                <img src="./pic3.jpeg">
+                <h2>87%</h2>
+                <hr>
+                <p>Placed students percentage</p>
+            </div>
+        </div>
+        <div>
+            <br><br><br>
+            <h1>Gallery</h1><br>
+            <div class="slideshow-container1">
+
+                <div class="mySlides1 fade1">
+                  <img src="./glry1.jpeg" style="width:100%">
+                </div>
+                
+                <div class="mySlides1 fade1">
+                  <img src="./glry2.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides1 fade1">
+                    <img src="./glry3.jpeg" style="width:100%">
+                  </div>
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+    </div>
+    <div class="footer">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">FAQs</a></li>
+            <li><a href="">Sitemap</a></li>
+            <li><a href="">Contact us</a></li>
+        </ul>
+        <i class="fa fa-facebook" onclick="window.location.href = 'https://www.facebook.com/SNIST.SreenidhiEducationalGroup';"></i>
+        <i class="fa fa-linkedin" onclick="window.location.href = 'https://www.linkedin.com/school/sreenidhi-snist/?originalSubdomain=in';"></i>
+        <i class="fa fa-youtube" onclick="window.location.href = 'https://www.youtube.com/hashtag/snist';"></i>
+        <i class="fa fa-instagram" onclick="window.location.href = 'https://www.instagram.com/snist_sreenidhi/?hl=en';"></i>
+        <br><br>
+        
+    </div>
+    <script src="./homepage.js"></script>
+    
+
+</body>
+
+</html>

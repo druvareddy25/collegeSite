@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial_scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="./feedback.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="./unnamed.png">
+
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script>
+        function SubForm() {
+            $.ajax({
+                url: 'https://api.apispreadsheets.com/data/qBERXRDO3oLyqZGm/',
+                type: 'post',
+                data: $("#form").serializeArray(),
+                success: function () {
+                    alert("Form Data Submitted :)")
+                    document.getElementById("form").reset();
+                },
+                error: function () {
+                    alert("There was an error :(")
+                }
+            });
+        }
+    </script>
+</head>
+
+<body class="body">
+    <div class="main">
+        <div class="row">
+            <img src="./sreenidhi-logo.png" alt="" class="img1">
+            <img src="./NAAC-A-grade-logo.jpg" alt="" class="img2">
+            <img src="./National_Board_of_Accreditation.svg.png" alt="" class="img3">
+            <img src="./UGC.jpg" alt="" class="img4">
+            <button class="contact" id="btn" onclick="window.location.href ='./contact.html';">Contact us</button>
+            <button class="Feedback" id="btn">Feedback form</button>
+            <button class="Feedback" id="btn">Alumni Portal</button>
+            <button class="Feedback" id="btn">Login</button>
+        </div>
+        <nav class="container">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./index.html">About Us</a></li>
+                <li><a href="./index.html">Departments</a></li>
+                <li><a href="./index.html">Research & Innovation</a></li>
+                <li><a href="./index.html">Infrastructure</a></li>
+                <li><a href="./index.html">Placements</a></li>
+                <li><a href="./query.html">IQAC</a></li>
+                <li><a href="">Students</a></li>
+                <li><a href="">Rankings</a></li>
+                <li><a href="./article.html">Articles</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="form">
+        <table>
+            <form action="" method="post" name="google-sheet" id="form">
+                <h1>Feedback form</h1>
+                <hr>
+                <tr>
+                    <td colspan="2">
+                        <label>
+                            Sreenidhi Institute of Science and Technology
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Fullname">Fullname</label><br>
+                        <input type="text" name="Fullname" placeholder=" Your Name" class="txt">
+                    </td>
+                    <td>
+                        <label for="Email">Email</label><br>
+                        <input type="text" name="Email" placeholder="Your Email" class="txt">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Phone Number">Phone Number</label><br>
+                        <input type="text" name="Phone Number" placeholder="Your Phone number" class="txt">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="Message">Message</label>
+                        <br>
+                        <textarea class="txtarea" name="Message" placeholder="Your Message"></textarea>
+                    </td>
+                </tr>
+                
+            </form>
+            <button type="submit" class="btn" name="submit" onclick="SubForm()" id="subbtn">Submit</button>
+            <button type="reset" class="btn" onclick="Reset()" id="subbtn">Reset</button></td>
+        </table>
+    </div>
+    <div class="footer">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">FAQs</a></li>
+            <li><a href="">Sitemap</a></li>
+            <li><a href="">Contact us</a></li>
+        </ul>
+        <i class="fa fa-facebook"
+            onclick="window.location.href = 'https://www.facebook.com/SNIST.SreenidhiEducationalGroup';"></i>
+        <i class="fa fa-linkedin"
+            onclick="window.location.href = 'https://www.linkedin.com/school/sreenidhi-snist/?originalSubdomain=in';"></i>
+        <i class="fa fa-youtube" onclick="window.location.href = 'https://www.youtube.com/hashtag/snist';"></i>
+        <i class="fa fa-instagram"
+            onclick="window.location.href = 'https://www.instagram.com/snist_sreenidhi/?hl=en';"></i>
+        <br><br>
+
+    </div>
+
+</body>
+
+</html>
