@@ -746,9 +746,10 @@ img {vertical-align: middle;}
     margin-left: 10px; 
     font-size: 15px;
     font-weight: bold;
+    color: #3a3a3a;
 }
 .footer ul a:hover{
-    color: #ffff;
+    color: #000000;
 }
 .add p{
     display: block;

@@ -414,7 +414,7 @@ a {
     text-align: center;
     box-shadow: 5px 3px 10px #cfcccc;
     border: none;
-    background: linear-gradient(#FF9C60,#FFD6B8);
+    background: linear-gradient(#76dffc,#FFD6B8);
 }
 .footer p{
     text-align: center;
@@ -436,9 +436,10 @@ a {
     margin-left: 10px; 
     font-size: 15px;
     font-weight: bold;
+    color: #515151;
 }
 .footer ul a:hover{
-    color: #ffff;
+    color: #000000;
 }
 .add p{
     display: block;
